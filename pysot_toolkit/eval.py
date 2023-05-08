@@ -47,7 +47,7 @@ def main():
 
     # assert False, 'please set the path to the ITB dataset in eval.py!'
     # please set the path of your itb folder
-    root = os.path.realpath('/home/data/testing_dataset') # if /home/data/testing_dataset/ITB, set it as '/home/data/testing_dataset'
+    root = os.path.realpath('/home/user/Benchmark/Informative-tracking-benchmark') # if /home/data/testing_dataset/ITB, set it as '/home/data/testing_dataset'
     root = os.path.join(root, args.dataset)
     if 'ITB' in args.dataset:
         dataset = ITBDataset(args.dataset, root)
